@@ -58,6 +58,11 @@ __MACOSX/
 Thumbs.db
 desktop.ini
 
+# Large Archives
+*.zip
+project.zip
+Project_Run_2/project.zip
+
 # Logs
 *.log
 logs/

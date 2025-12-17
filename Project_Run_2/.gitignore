@@ -1,0 +1,19 @@
+
+# Data
+content/selfdriving cars data/
+content/selfdriving cars data.zip
+content/Vid_Self-Driving_Demo.mp4
+content/project.zip
+project.zip
+*.mp4
+*.zip
+
+# Models - We want to keep onnx files if possible.
+# But generally zip files are ignored above. ONNX are .onnx (kept).
+
+# Generated files
+*.png
+output.txt
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
