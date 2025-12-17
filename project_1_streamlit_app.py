@@ -1,3 +1,7 @@
+# Tesla Autonomous Vision - YOLOv5 Object Detection
+# Version: 1.0.1 - Streamlit 1.30.0 Compatible
+# Author: Ratnesh Singh
+
 import streamlit as st
 import cv2
 import numpy as np
