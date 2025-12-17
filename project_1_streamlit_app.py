@@ -353,7 +353,7 @@ with tabs[1]:
     *   The input image fed to the network directly outputs the class probabilities and bounding box coordinates.
     *   These models **don't have the region proposal stage** (Region Proposal Network).
     """)
-    st.image("C:/Users/rattu/Downloads/L8 P-2 ObjectDetection with Single Stage Methods/Project Run -1/single_stage_detection.png", caption="Single Stage Object Detection Architecture", use_column_width=True)
+    st.image("single_stage_detection.png", caption="Single Stage Object Detection Architecture", use_column_width=True)
 
 # --- Tab 3: Theory: SSD & YOLO ---
 with tabs[2]:
