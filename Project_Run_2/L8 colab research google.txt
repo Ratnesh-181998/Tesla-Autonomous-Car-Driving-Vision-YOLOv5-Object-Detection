@@ -1,0 +1,27 @@
+L8 : https://colab.research.google.com/drive/1XfHwVqTVMiw51yx1DdIqATyHjf-qybJS#scrollTo=fsD4QbkF1ZXr
+
+
+Running a YOLOv4 Object Detector with Darknet 
+in the Cloud! (GPU ENABLED) : https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg#scrollTo=_5oMbqCBBlRP
+
+Introduction: What is RetinaNet Model? : https://colab.research.google.com/drive/1cg42_iwvzeyC-3OPcvel4-i0F00_4snG#scrollTo=8LfhNwBr_zsH
+
+Ratnesh Version - https://colab.research.google.com/drive/1l25vneWsdwTBHUhAN_6UJ8ztys19iLVh#scrollTo=drJsCeVK9zJF
+
+https://github.com/AlexeyAB/darknet?tab=readme-ov-file#how-to-compile-on-linuxmacos-using-cmake
+
+...................
+
+Problem Statement:
+You are working as a Machine learning Engineer in Tesla as part of the Autonomous driving team focused on building prototype ML model to identify and detect location of:
+
+Traffic Lights, Stop signs
+Other Vehicles such as Car, Bicycles, Truck etc
+Pedestrian(People)
+Animals
+on the road in realtime using the Camera installed in the deck of the owners car.
+
+Real time constraints:
+Our Object Detection Algorithm needs to be Fast enough to run inference in RealTime on commodity hardware(CPU only) and highly accurate to ensure safety.
+Let's see how we can achieve this Balance using new family of Object Detection Algorithms: Single Stage Detectors.
+
