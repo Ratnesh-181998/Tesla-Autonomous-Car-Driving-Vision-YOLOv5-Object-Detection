@@ -247,17 +247,33 @@ with tabs[0]:
     
     with c_input:
         st.caption("**Input Source**")
-        input_source = st.radio("Select Source", ("Demo Video", "Upload Video"), label_visibility="collapsed")
         
-        if input_source == "Upload Video":
+        # Define video options
+        video_options = {
+            "Demo Video": VID_FILE,
+            "Verification: 4K Traffic 1": "data/14927699_3840_2160_30fps.mp4",
+            "Verification: 4K Traffic 2": "data/14927705_3840_2160_30fps.mp4",
+            "Verification: Tiny Traffic": "data/273289_tiny.mp4",
+            "Verification: HD Vertical": "data/8625256-hd_1080_1920_30fps.mp4",
+            "Upload Video": None
+        }
+        
+        selected_option = st.selectbox("Select Source", list(video_options.keys()), label_visibility="collapsed")
+        
+        if selected_option == "Upload Video":
             uploaded_file = st.file_uploader("Choose a video...", type=["mp4", "avi", "mov"])
             if uploaded_file is not None:
                 tfile = tempfile.NamedTemporaryFile(delete=False)
                 tfile.write(uploaded_file.read())
                 video_path = tfile.name
                 temp_file = tfile.name
+            else:
+                video_path = None
         else:
-             video_path = VID_FILE
+             video_path = video_options[selected_option]
+             if not os.path.exists(video_path):
+                 # Fallback/Check if we need to adjust path
+                 st.warning(f"Video file not found: {video_path}")
 
     with c_settings:
         st.caption("**Model Settings**")
