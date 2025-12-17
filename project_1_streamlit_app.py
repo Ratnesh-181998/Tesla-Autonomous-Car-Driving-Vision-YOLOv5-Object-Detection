@@ -268,9 +268,9 @@ with tabs[0]:
         
         b1, b2 = st.columns(2)
         with b1:
-             start_button = st.button("▶ Start Detection", type="primary", use_column_width=True)
+             start_button = st.button("▶ Start Detection", type="primary")
         with b2:
-             stop_button = st.button("⏹ Stop", use_column_width=True)
+             stop_button = st.button("⏹ Stop")
 
     st.markdown("---")
 
