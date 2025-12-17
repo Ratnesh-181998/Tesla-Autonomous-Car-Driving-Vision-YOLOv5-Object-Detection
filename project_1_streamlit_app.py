@@ -268,9 +268,9 @@ with tabs[0]:
         
         b1, b2 = st.columns(2)
         with b1:
-             start_button = st.button("▶ Start Detection", type="primary", use_container_width=True)
+             start_button = st.button("▶ Start Detection", type="primary", use_column_width=True)
         with b2:
-             stop_button = st.button("⏹ Stop", use_container_width=True)
+             stop_button = st.button("⏹ Stop", use_column_width=True)
 
     st.markdown("---")
 
@@ -292,7 +292,7 @@ with tabs[0]:
             default_img = np.zeros((360, 640, 3), dtype=np.uint8)
             cv2.putText(default_img, "TESLA VISION SYSTEM", (160, 160), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
             cv2.putText(default_img, "STANDBY", (260, 210), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (100, 100, 255), 1)
-            image_placeholder.image(default_img, channels="BGR", use_container_width=True)
+            image_placeholder.image(default_img, channels="BGR", use_column_width=True)
 
 # --- Tab 2: Objective ---
 with tabs[1]:
@@ -318,7 +318,7 @@ with tabs[1]:
     1.  **Fast enough** to run inference in Real-Time on commodity hardware (**CPU only**).
     2.  **Highly accurate** to ensure safety.
     """)
-    st.image("real_time_constraints.png", caption="Real-time Detection Example", use_container_width=True)
+    st.image("real_time_constraints.png", caption="Real-time Detection Example", use_column_width=True)
     
 
     st.markdown("---")
@@ -353,7 +353,7 @@ with tabs[1]:
     *   The input image fed to the network directly outputs the class probabilities and bounding box coordinates.
     *   These models **don't have the region proposal stage** (Region Proposal Network).
     """)
-    st.image("C:/Users/rattu/Downloads/L8 P-2 ObjectDetection with Single Stage Methods/Project Run -1/single_stage_detection.png", caption="Single Stage Object Detection Architecture", use_container_width=True)
+    st.image("C:/Users/rattu/Downloads/L8 P-2 ObjectDetection with Single Stage Methods/Project Run -1/single_stage_detection.png", caption="Single Stage Object Detection Architecture", use_column_width=True)
 
 # --- Tab 3: Theory: SSD & YOLO ---
 with tabs[2]:
@@ -378,7 +378,7 @@ with tabs[2]:
 
     Before understanding how SSD works and detect object at diffferent scales, First let's observe the architecture:
     """)
-    st.image("ssd_architecture.png", caption="SSD Architecture", use_container_width=True)
+    st.image("ssd_architecture.png", caption="SSD Architecture", use_column_width=True)
 
     st.markdown("""
     ### Architecture Details:
@@ -397,7 +397,7 @@ with tabs[2]:
     st.markdown("---")
     
     st.subheader("Deep Dive: How SSD Detect Object at different Scales")
-    st.image("ssd_scales.png", caption="Detections at Scales", use_container_width=True)
+    st.image("ssd_scales.png", caption="Detections at Scales", use_column_width=True)
 
     st.markdown("""
     To produce detections of different locations in the image, **the SSD Network uses Grid Detectors**.
@@ -414,7 +414,7 @@ with tabs[2]:
     * Interestingly, in the work done on MultiBox an Inception-style convolutional network is used.
     * The 1x1 convolutions that you see below help in dimensionality reduction since the number of dimensions go down (but “width” and “height” remains the same)
     """)
-    st.image("multibox_loss.png", caption="MultiBox 1x1 Convolutions", use_container_width=True)
+    st.image("multibox_loss.png", caption="MultiBox 1x1 Convolutions", use_column_width=True)
 
     st.markdown("""
     **MultiBox’s loss function combines two critical components that made their way into SSD:**
@@ -429,7 +429,7 @@ with tabs[2]:
     """)
 
     st.markdown("### Producing Detections")
-    st.image("ssd_prediction_process.png", caption="SSD Prediction Process", use_container_width=True)
+    st.image("ssd_prediction_process.png", caption="SSD Prediction Process", use_column_width=True)
 
     st.markdown("""
     * You have seen how SSD takes input image and able to locate object **at different shapes, scales and locations**.
@@ -501,7 +501,7 @@ with tabs[3]:
     """)
 
     st.markdown("### Detailed Timeline:")
-    st.image("yolo_timeline.png", caption="YOLO Version Timeline", use_container_width=True)
+    st.image("yolo_timeline.png", caption="YOLO Version Timeline", use_column_width=True)
     
     st.markdown("---")
 
@@ -513,7 +513,7 @@ with tabs[3]:
     The author treats the object detection problem as a regression problem in the YOLO algorithm and divides the image into an **S × S grid**. 
     If the center of a target falls into a grid, the grid is responsible for detecting the target.
     """)
-    st.image("yolo_dog_grid.png", caption="S x S Grid Logic", use_container_width=True)
+    st.image("yolo_dog_grid.png", caption="S x S Grid Logic", use_column_width=True)
 
     st.markdown("""
     **Each grid will output a bounding box, confidence, and class probability map.** Among them:
@@ -522,20 +522,20 @@ with tabs[3]:
     2.  **Confidence**: Indicates the probability of containing objects in this prediction box (IoU value between prediction and actual box).
     3.  **Class Probability**: Indicates the class probability of the object (YOLOv3 uses a two-class method).
     """)
-    st.image("yolo_tesla_vector.png", caption="Output Vector Components", use_container_width=True)
+    st.image("yolo_tesla_vector.png", caption="Output Vector Components", use_column_width=True)
 
     st.markdown("### Simple YOLO Architecture:")
-    st.image("yolo_simple_arch.png", caption="Simple YOLO Architecture", use_container_width=True)
+    st.image("yolo_simple_arch.png", caption="Simple YOLO Architecture", use_column_width=True)
 
     st.markdown("### Yolo V3 Architecture details:")
-    st.image("yolov3_full_arch.png", caption="YOLOv3 Architecture", use_container_width=True)
+    st.image("yolov3_full_arch.png", caption="YOLOv3 Architecture", use_column_width=True)
 
     st.markdown("""
     As mentioned in the original paper, YOLOv3 has **53 convolutional layers called Darknet-53** (shown below). 
     *   Mainly composed of Convolutional and Residual structures.
     *   Last three layers (Avgpool, Connected, Softmax) are used for ImageNet classification training and are **NOT used** when extracting features for detection.
     """)
-    st.image("darknet53_table.png", caption="Darknet-53 Backbone", use_container_width=True)
+    st.image("darknet53_table.png", caption="Darknet-53 Backbone", use_column_width=True)
 
     st.markdown("""
     **The reason behind picking Darknet-53 as the backbone:**
@@ -543,7 +543,7 @@ with tabs[3]:
     2.  Speed is **1.5x of ResNet-101** and **2x of ResNet-152**.
     3.  Highest measurement floating-point operation per second (better GPU utilization).
     """)
-    st.image("backbone_comparison.png", caption="Backbone Performance Comparison", use_container_width=True)
+    st.image("backbone_comparison.png", caption="Backbone Performance Comparison", use_column_width=True)
 
     st.markdown("### YOLO in easy steps:")
     st.markdown("""
@@ -564,7 +564,7 @@ with tabs[3]:
     *   **YOLO**: Uses two fully connected layers.
     *   **SSD**: Uses multiple convolutional layers (feature layers at end of base network) to predict offsets for default boxes of different scales/aspect ratios.
     """)
-    st.image("ssd_vs_yolo_comparison.png", caption="SSD vs YOLO", use_container_width=True)
+    st.image("ssd_vs_yolo_comparison.png", caption="SSD vs YOLO", use_column_width=True)
     
     st.markdown("---")
 
@@ -628,7 +628,7 @@ with tabs[4]:
     st.markdown("We validated the model using the **Self-Driving Car Dataset**, comprising crowd-sourced driving footage.")
 
     st.subheader("Let's plot top two images in dataset")
-    st.image("dataset_samples.png", caption="Sample Images from Dataset", use_container_width=True)
+    st.image("dataset_samples.png", caption="Sample Images from Dataset", use_column_width=True)
 
     st.subheader("Let's setup config for model")
     st.markdown("""
@@ -637,9 +637,9 @@ with tabs[4]:
     
     To Enhance performance we can finetune the model on our custom dataset as well.
     """)
-    st.image("result_sample_1.png", caption="Prediction 1", use_container_width=True)
-    st.image("result_sample_2.png", caption="Prediction 2", use_container_width=True)
-    st.image("result_sample_3.png", caption="Prediction 3", use_container_width=True)
+    st.image("result_sample_1.png", caption="Prediction 1", use_column_width=True)
+    st.image("result_sample_2.png", caption="Prediction 2", use_column_width=True)
+    st.image("result_sample_3.png", caption="Prediction 3", use_column_width=True)
     
 
 # --- Tab 6: Conclusion ---
@@ -704,7 +704,7 @@ if start_button:
                 output_frame_rgb = cv2.cvtColor(output_frame, cv2.COLOR_BGR2RGB)
                 
                 # Display
-                image_placeholder.image(output_frame_rgb, channels="RGB", use_container_width=True)
+                image_placeholder.image(output_frame_rgb, channels="RGB", use_column_width=True)
                 
             cap.release()
             if temp_file:
