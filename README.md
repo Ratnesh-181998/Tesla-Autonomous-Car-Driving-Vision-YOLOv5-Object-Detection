@@ -61,11 +61,20 @@ The main interactive demonstration tab featuring:
   - Confidence Threshold (0.0 - 1.0): Minimum confidence for detections
   - NMS Threshold (0.0 - 1.0): Non-Maximum Suppression threshold
 - **Action Buttons**: Start/Stop detection with visual feedback
+<img width="2838" height="1218" alt="image" src="https://github.com/user-attachments/assets/6b3453a2-5531-4f69-a17e-717778641f3f" />
+<img width="2769" height="1267" alt="image" src="https://github.com/user-attachments/assets/631a13d3-9ffb-4cc1-b36d-c45c6cb573df" />
+<img width="2858" height="1305" alt="image" src="https://github.com/user-attachments/assets/f3e2e8e5-0d29-4f6a-967e-78c97cf7ce8e" />
+<img width="1953" height="1043" alt="image" src="https://github.com/user-attachments/assets/69d28af9-8e25-4f83-9499-a0299ca1aac2" />
 
 **Live Feed & Statistics**
 - **Real-time Video Display**: Live detection results with bounding boxes
 - **FPS Counter**: Monitor processing speed
 - **Status Indicator**: Current system state (Ready/Running/Finished)
+<img width="2034" height="1031" alt="image" src="https://github.com/user-attachments/assets/32260a76-619a-4666-a577-f8b5829f2831" />
+<img width="1877" height="1015" alt="image" src="https://github.com/user-attachments/assets/4140b35c-b1c7-46df-8ff0-3df410db884f" />
+<img width="2466" height="1405" alt="image" src="https://github.com/user-attachments/assets/55778908-d563-4cad-bb0d-6dcab36dc684" />
+<img width="2443" height="1376" alt="image" src="https://github.com/user-attachments/assets/09e5dfe7-1262-4c29-940e-34d9a4b6455e" />
+<img width="2474" height="1376" alt="image" src="https://github.com/user-attachments/assets/729ca4fd-1e0f-4f31-bb77-4a01156b8302" />
 
 ### Tab 2: 🎯 Objective
 Comprehensive project goals and problem statement:
