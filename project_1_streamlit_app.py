@@ -686,6 +686,9 @@ if start_button:
                     status_indicator.markdown("⚪ **Status:** Finished")
                     break
                 
+                # Optimization: Resize frame to improve FPS on CPU
+                frame = cv2.resize(frame, (640, 360))
+                
                 # Perform Detection
                 output_frame = detector.detect(frame.copy())
                 
