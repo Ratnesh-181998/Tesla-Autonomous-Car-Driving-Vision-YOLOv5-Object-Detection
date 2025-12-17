@@ -1,0 +1,23 @@
+# Git LFS Configuration for Large Files
+# Track files larger than 50MB with Git LFS
+
+# ONNX Model Files
+*.onnx filter=lfs diff=lfs merge=lfs -text
+
+# Video Files
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+
+# PDF Documentation
+*.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Compressed Archives
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+
+# Jupyter Notebooks (if large)
+*.ipynb filter=lfs diff=lfs merge=lfs -text
+
+# Large Image Files
+*.psd filter=lfs diff=lfs merge=lfs -text
