@@ -19,7 +19,13 @@ This application demonstrates advanced computer vision techniques for autonomous
 The system processes video streams in real-time, providing instant visual feedback with bounding boxes, class labels, and confidence scores.
 
 ---
-
+## 🌐🎬 Live Demo
+🚀 **Try it now:**
+- **Streamlit Profile** - https://share.streamlit.io/user/ratnesh-181998
+- **Project Demo** - https://tesla-autonomous-car-driving-vision-yolov5-object-detection-an.streamlit.app/
+- **Technologies** - object-detection, yolov5, onnx, streamlit, autonomous-driving, computer-vision,deep-learning, real-time-detection, opencv, pytorch, tesla, pedestrian-detection,vehicle-detection, traffic-signal-detection, single-stage-detector
+  
+---
 ## ✨ Key Features
 
 ### 🔥 Core Capabilities
@@ -521,7 +527,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 - 📱 **Phone**: +91-947XXXXX46
 
 ### Project Links
-- 🌐 **Live Demo**: [Streamlit App](https://universal-pdf-rag-chatbot-mhsi4ygebe6hmq3ij6d665.streamlit.app/)
+- 🌐 **Live Demo**: [Streamlit App](https://tesla-autonomous-car-driving-vision-yolov5-object-detection-an.streamlit.app/)
 - 📖 **Documentation**: [GitHub Wiki](https://github.com/Ratnesh-181998/Tesla-Autonomous-Car-Driving-Vision-YOLOv5-Object-Detection/wiki)
 - 🐛 **Issue Tracker**: [GitHub Issues](https://github.com/Ratnesh-181998/Tesla-Autonomous-Car-Driving-Vision-YOLOv5-Object-Detection/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/Ratnesh-181998/Tesla-Autonomous-Car-Driving-Vision-YOLOv5-Object-Detection/discussions)
