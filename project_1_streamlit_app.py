@@ -258,7 +258,8 @@ with tabs[0]:
             "Upload Video": None
         }
         
-        selected_option = st.selectbox("Select Source", list(video_options.keys()), label_visibility="collapsed")
+        # Display options as radio buttons to show all on UI
+        selected_option = st.radio("Select Source", list(video_options.keys()))
         
         if selected_option == "Upload Video":
             uploaded_file = st.file_uploader("Choose a video...", type=["mp4", "avi", "mov"])
