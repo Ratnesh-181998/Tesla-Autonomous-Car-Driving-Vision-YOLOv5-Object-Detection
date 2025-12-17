@@ -82,6 +82,10 @@ Comprehensive project goals and problem statement:
 - Real-time detection requirements
 - Performance vs. accuracy trade-offs
 - Single-stage detector advantages
+<img width="2742" height="1275" alt="image" src="https://github.com/user-attachments/assets/97d640f9-0bcf-4634-8944-4e333a75c330" />
+<img width="2275" height="1042" alt="image" src="https://github.com/user-attachments/assets/4621cd7a-01a3-4565-b0a4-dcb63dbf567a" />
+<img width="2202" height="1145" alt="image" src="https://github.com/user-attachments/assets/e6f61672-5620-46db-be21-8ede66ca6ad2" />
+<img width="2203" height="1320" alt="image" src="https://github.com/user-attachments/assets/f3703e17-84bb-4e3a-aa2b-ecfa4cff211d" />
 
 ### Tab 3: 🧠 Introduction to SSD
 Deep dive into Single Shot MultiBox Detector:
@@ -89,6 +93,12 @@ Deep dive into Single Shot MultiBox Detector:
 - **Key Concepts**: Default boxes, multi-scale predictions
 - **Visual Aids**: Architecture diagrams, prediction process flowcharts
 - **Performance Metrics**: Speed vs. accuracy comparisons
+<img width="2794" height="1141" alt="image" src="https://github.com/user-attachments/assets/0ce95165-13a3-4fde-a82e-895f85ad5682" />
+<img width="2147" height="1280" alt="image" src="https://github.com/user-attachments/assets/7bfb5cf7-e00a-4451-9905-60b1ded8d9c6" />
+<img width="2210" height="1315" alt="image" src="https://github.com/user-attachments/assets/e765a03d-76eb-43e6-8a6e-baa0ff76d4ad" />
+<img width="2107" height="1133" alt="image" src="https://github.com/user-attachments/assets/252cc557-a611-44b6-a619-f88449f09bbf" />
+<img width="2142" height="1346" alt="image" src="https://github.com/user-attachments/assets/7b6826d0-0787-4441-b516-51bce4f7f187" />
+<img width="2285" height="1365" alt="image" src="https://github.com/user-attachments/assets/8ac64442-1f22-43ae-b96a-bc3a85aac2a8" />
 
 ### Tab 4: 🧠 Introduction to YOLO
 Detailed YOLO (You Only Look Once) explanation:
@@ -96,6 +106,16 @@ Detailed YOLO (You Only Look Once) explanation:
 - **Architecture Details**: Darknet-53 backbone, feature pyramid networks
 - **Grid-based Detection**: How YOLO divides images for prediction
 - **Advantages**: Real-time performance, end-to-end training
+<img width="2843" height="1287" alt="image" src="https://github.com/user-attachments/assets/b0b8b31b-b14a-4fd4-b2ff-ae85b8d30821" />
+<img width="2146" height="1375" alt="image" src="https://github.com/user-attachments/assets/a286d558-d17d-4944-ad90-4c8c2b9fb3c1" />
+<img width="2124" height="1273" alt="image" src="https://github.com/user-attachments/assets/c3081fda-d724-404c-80db-3889c3185848" />
+<img width="2081" height="1336" alt="image" src="https://github.com/user-attachments/assets/d5e439d7-250f-4971-84ab-cd2a83073287" />
+<img width="1907" height="1060" alt="image" src="https://github.com/user-attachments/assets/f446b951-860c-4516-853e-a64338e9dca7" />
+<img width="1950" height="709" alt="image" src="https://github.com/user-attachments/assets/a3d65d20-13a8-41ea-b8b6-31a63e703d00" />
+<img width="1748" height="991" alt="image" src="https://github.com/user-attachments/assets/4c069d57-a6f6-4a1f-86dc-22d239a07f80" />
+<img width="861" height="1128" alt="image" src="https://github.com/user-attachments/assets/a74dd493-9d48-42a6-a153-b2dfab00e3b7" />
+<img width="1966" height="1161" alt="image" src="https://github.com/user-attachments/assets/7070869b-5a26-4402-8b54-3c76b0adb334" />
+<img width="1242" height="852" alt="image" src="https://github.com/user-attachments/assets/6079f3f1-d51f-4ba6-beb7-32af15c832df" />
 
 ### Tab 5: 💾 Model Details
 Technical specifications and implementation:
@@ -104,6 +124,9 @@ Technical specifications and implementation:
 - **Training Details**: COCO dataset, 80 object classes
 - **Inference Pipeline**: Pre-processing, detection, post-processing
 - **Performance Benchmarks**: FPS on various hardware
+<img width="2776" height="1245" alt="image" src="https://github.com/user-attachments/assets/d01ee16c-e2e0-4cd4-8224-1d0a7231548a" />
+<img width="2170" height="1093" alt="image" src="https://github.com/user-attachments/assets/8b1ec6e4-1b7a-469a-aa64-c9f2adfb2fa8" />
+<img width="2152" height="1371" alt="image" src="https://github.com/user-attachments/assets/d2dfc2b5-9da1-4ab6-b272-ee099bba6b51" />
 
 ### Tab 6: 🏁 Conclusion
 Project summary and future directions:
@@ -111,6 +134,8 @@ Project summary and future directions:
 - **Limitations**: Small object detection, class imbalance
 - **Future Enhancements**: RetinaNet integration, model quantization
 - **Applications**: Autonomous vehicles, traffic monitoring, safety systems
+<img width="2820" height="1234" alt="image" src="https://github.com/user-attachments/assets/d3256656-533f-4c1e-b8e1-cb26d0554238" />
+<img width="2663" height="1265" alt="image" src="https://github.com/user-attachments/assets/08e1ffb6-7b62-4890-882a-e97c024bcbdc" />
 
 ---
 
