@@ -24,7 +24,14 @@ The system processes video streams in real-time, providing instant visual feedba
 - **Streamlit Profile** - https://share.streamlit.io/user/ratnesh-181998
 - **Project Demo** - https://tesla-autonomous-car-driving-vision-yolov5-object-detection-an.streamlit.app/
 - **Technologies** - object-detection, yolov5, onnx, streamlit, autonomous-driving, computer-vision,deep-learning, real-time-detection, opencv, pytorch, tesla, pedestrian-detection,vehicle-detection, traffic-signal-detection, single-stage-detector
-  
+
+---
+
+### 🎬 Live Project Demo
+> Experience the full flow:
+
+![Project Demo Walkthrough](Project_Walkthrough.gif)
+
 ---
 ## ✨ Key Features
 
